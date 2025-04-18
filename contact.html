@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="icon" type="img/x-icon" href="./Pics/envelope.png" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <style>
+      @import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
+
+      * {
+        font-family: "Onest", sans-serif;
+        background-color: #f3e0d0;
+        color: #577e68;
+        box-sizing: border-box;
+      }
+
+      nav {
+        padding: 1em;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        color: #d98e87;
+        background-color: #f3e0d0;
+        border: 3px solid #d98e87;
+        border-radius: 10px;
+        padding: 0.25em 0.5em;
+        margin-top: 0.5em;
+        margin-right: 0.5em;
+        transition: 0.3s;
+      }
+
+      a:hover {
+        background-color: #d98e87;
+        color: #f3e0d0;
+      }
+
+      a:active {
+        text-decoration: underline;
+      }
+
+      h1 {
+        background-color: #577e68;
+        font-weight: bold;
+        color: #f3e0d0;
+        padding: 0.5em;
+      }
+
+      p {
+        font-weight: bold;
+        margin-left: 10px;
+      }
+
+      form {
+        font-weight: bold;
+        width: 500px;
+        border: 3px solid #577e68;
+        border-radius: 16px;
+        padding: 1.5em;
+        margin-left: 10px;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        border-radius: 8px;
+        border: none;
+        padding: 0.75em;
+        background-color: #fff;
+        margin-bottom: 1em;
+      }
+
+      textarea {
+        border-radius: 5px;
+        border: none;
+        background-color: #fff;
+        margin-top: 8px;
+      }
+
+      button {
+        font-size: 16px;
+        background-color: #f3e0d0;
+        border: 2px solid #577e68;
+        border-radius: 8px;
+        padding: 0.5em 0.75em;
+        margin-right: 0.25em;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #d98e87;
+        border: 2px solid #d98e87;
+        border-radius: 5px;
+        color: #f3e0d0;
+      }
+    </style> -->
+    <script>
+      function sendData() {
+        alert("Your info has been send!");
+      }
+    </script>
+  </head>
+  <body>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./education.html">Education</a>
+      <a href="./work.html">Work</a>
+      <a href="javascrript:">Contact</a>
+    </nav>
+    <hr />
+
+    <h1 style="text-align: center">Contact Me</h1>
+    <p style="text-align: center">Please tell your info</p>
+    <div class="container">
+      <form>
+        <label for="fname"
+          >First name :
+          <input type="text" name="fname" />
+        </label>
+        <label for="lname"
+          >Last name :
+          <input type="text" name="lname" />
+        </label>
+
+        <label for="gender"
+          >Gender :
+          <select name="gender" id="gender">
+            <option disabled selected>Please select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="transgender">Transgender</option>
+            <option value="unidentified">Unidentified</option>
+          </select></label
+        >
+        <label for="message"
+          >Your message :
+          <textarea name="message" id="message" cols="40" rows="12"></textarea>
+        </label>
+
+        <button type="submit" value="Submit" onclick="sendData()">Send</button>
+        <button type="reset">Reset</button>
+      </form>
+    </div>
+  </body>
+</html>

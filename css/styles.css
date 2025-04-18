@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
+
+:root {
+  --whitesmoke: #eeeaf3;
+  --lightpink: #e4d3dd;
+  --lightbabyblue: #9faad2;
+  --lightskyblue: #d8f2fd;
+  --teal: #6ab5ad;
+  --midnightblue: #234563;
+  --wheat: #f8e6c0;
+  --husk: #e7d3aa;
+  --eggyolk: #e8a990;
+  --lullabyblue: #98a8d2;
+  --white: #fff;
+  --sand: #f3e0d0;
+  --lightbrick: #d98e87;
+  --christmasgreen: #577e68;
+}
+
+/* * {
+  font-family: "Onest", sans-serif;
+}
+
+nav {
+  padding: 1em;
+}
+
+.body_index {
+  background-color: var(--lightpink);
+}
+
+.a_index {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--lightbabyblue);
+  background-color: var(--whitesmoke);
+  border: 3px solid var(--lightbabyblue);
+  border-radius: 10px;
+  padding: 0.25em 0.5em;
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+  transition: 0.3s;
+}
+
+.a_index:hover {
+  background-color: var(--lightbabyblue);
+  color: var(--whitesmoke);
+}
+
+.a_index:active {
+  text-decoration: underline;
+}
+
+.h1_index {
+  background-color: var(--lightbabyblue);
+  color: var(--whitesmoke);
+  padding: 0.5em;
+} */
+
+* {
+  font-family: "Onest", sans-serif;
+  background-color: var(--sand);
+  color: var(--christmasgreen);
+  box-sizing: border-box;
+}
+
+.body_index {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main_contain {
+  margin-top: 2rem;
+}
+
+nav {
+  padding: 1em;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--lightbrick);
+  background-color: var(--sand);
+  border: 3px solid var(--lightbrick);
+  border-radius: 10px;
+  padding: 0.25em 0.5em;
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+  transition: 0.3s;
+}
+
+a:hover {
+  background-color: var(--lightbrick);
+  color: var(--sand);
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+hr {
+  border-top: 2px dashed var(--lightbrick);
+}
+
+h1 {
+  background-color: var(--christmasgreen);
+  font-weight: bold;
+  color: var(--sand);
+  padding: 0.5em;
+}
+
+h3 {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--lightbrick);
+}
+
+h5 {
+  margin-left: 10px;
+}
+
+p {
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+table,
+th,
+td {
+  border: 5px solid var(--sand);
+  border-collapse: collapse;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--sand);
+  padding: 1em;
+  background-color: var(--christmasgreen);
+  transition: 0.3s;
+}
+
+td:hover {
+  background-color: var(--lightbrick);
+}
+
+.box_img {
+  border-radius: 50%;
+}
+
+.box_img img {
+  position: relative;
+  width: 12vw;
+}
+
+img {
+  display: block;
+  width: 40%;
+  margin: 20px auto auto auto;
+}
+
+.home_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 0 9%;
+}
+
+.introduce {
+  font-size: 2.75rem;
+  font-weight: 750;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+span {
+  color: var(--lightbrick);
+}
+
+.skill-icons {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+
+  i {
+    transition: 0.3s;
+  }
+}
+
+.skill-icons i:hover {
+  scale: 1.3;
+}
+
+.contact-icons {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.contact-icons i:hover {
+  color: var(--lightbrick);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  form {
+    font-weight: bold;
+    width: 500px;
+    border: 3px solid var(--christmasgreen);
+    border-radius: 16px;
+    padding: 1.5em;
+    margin-left: 10px;
+  }
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  padding: 0.75em;
+  background-color: var(--white);
+  margin-bottom: 1em;
+}
+
+tr:nth-child(1) td:nth-child(1) {
+  background-color: var(--lightbrick);
+}
+
+textarea {
+  border-radius: 5px;
+  border: none;
+  background-color: var(--white);
+  margin-top: 8px;
+}
+
+button {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--sand);
+  border: 3px solid var(--christmasgreen);
+  border-radius: 8px;
+  padding: 0.5em 0.75em;
+  margin-right: 0.25em;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--lightbrick);
+  border: 3px solid var(--lightbrick);
+  border-radius: 8px;
+  color: var(--sand);
+}
